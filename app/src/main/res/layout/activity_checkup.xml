@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page"
+    tools:context=".checkup">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/header_title"
+            style="@style/TextStyle"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/montserrat_alternatesbold"
+            android:text="@string/welcome"
+            android:textSize="20dp" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_below="@+id/header_title"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_alternatesregular"
+            android:text="@string/welcomedif"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/main_info"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header">
+        <EditText
+            style="@style/EditStyle"
+            android:id="@+id/editTextNumber"
+
+            android:hint="@string/input_stud"
+            android:inputType="text"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            style="@style/EditStyle"
+            android:layout_below="@+id/editTextNumber"
+
+            android:layout_marginTop="16dp"
+
+            android:hint="@string/input_mail"
+            android:inputType="text"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.572"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+
+            style="@style/EditStyle"
+            android:layout_below="@+id/editTextTextEmailAddress"
+
+            android:layout_marginTop="16dp"
+
+            android:hint="@string/input_passw"
+            android:inputType="text"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        <!-- android:drawableEnd="@drawable/icon_visib" -->
+        <LinearLayout
+            android:layout_width="300dp"
+            android:id="@+id/linearContainer1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/editTextTextPassword"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/img_remember"
+                android:layout_marginEnd="8dp"/>
+            <!-- Label on the left -->
+
+            <!-- Label on the right -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:gravity="start"
+                android:text="Запомнить" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/white"
+                android:text="Забыли пароль?" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/ButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearContainer1"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#9DD9FD"
+
+            android:text="@string/logtbutton"
+            android:textColor="#000000"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="352dp" />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:id="@+id/button2"
+            android:backgroundTint="@color/white"
+            android:layout_below="@+id/button1"
+            android:textColor="@color/black"
+            android:text="@string/regtbutton"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button1" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_info"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="160dp">
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_alternatesregular"
+            android:text="Выполняя вход в приложение, Вы принимаете
+условия пользовательского соглашения"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+    </RelativeLayout>
+</RelativeLayout>
+

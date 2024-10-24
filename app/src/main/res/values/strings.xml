@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ami</string>
+    <string name="input_stud">Введите номер студенченского</string>
+    <string name="input_mail">Введите адрес почты</string>
+    <string name="input_passw">Введите пароль</string>
+    <string name="logtbutton">Войти</string>
+    <string name="regtbutton">Зарегистрироваться</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="welcomedif">Присоединяйся к нашей растущей сети студенческих знакомств</string>
+    <string name="info">Работаю в сфере WEB-дизайна и увлекаюсь фотографией. Люблю посещать художественные выставки и музеи.
+Ищу интересного человека, который разделял бы мои творческие увлечения и с кем можно было бы вместе открывать новые интересные места.</string>
+</resources>

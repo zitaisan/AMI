@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="EditStyle">
+        <item name="android:fontFamily">"@font/montserrat_alternatesregular"</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:width">350dp</item>
+        <item name="android:height">800dp</item>
+        <item name="android:ems">10</item>otem?
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:background">@drawable/rounded_edittext</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:fontFamily">"@font/montserrat_alternatesregular"</item>
+        <item name="android:width">260dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:maxWidth">220dp</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item> <!-- Цвет панели инструментов -->
+        <item name="android:statusBarColor">@android:color/white</item> <!-- Цвет статус-бара -->
+        <item name="android:windowLightStatusBar">true</item> <!-- Если вы хотите, чтобы текст статус-бара был темным -->
+    </style>
+    <style name="InterestButtonStyle">
+        <item name="android:textColor">@drawable/button_text_color</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:fontFamily">@font/montserrat_alternatesbold</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+</resources>

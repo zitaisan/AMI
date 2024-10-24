@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page"
+    tools:context=".checkup">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+        <Spinner
+            style="@style/EditStyle"
+            android:id="@+id/spinnerUniversity"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+        <EditText
+            android:id="@+id/editTextName"
+            style="@style/EditStyle"
+            android:layout_below="@+id/spinnerUniversity"
+
+            android:layout_marginTop="16dp"
+            android:hint="Введите имя"
+            android:inputType="text"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextAge"
+            style="@style/EditStyle"
+            android:layout_below="@+id/editTextName"
+
+            android:layout_marginTop="16dp"
+            android:hint="Введите возраст"
+            android:inputType="text"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextAbout"
+            style="@style/EditStyle"
+            android:layout_below="@+id/editTextAge"
+
+            android:layout_marginTop="16dp"
+            android:hint="Введите о себе"
+            android:inputType="text"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!-- android:drawableEnd="@drawable/icon_visib" -->
+
+
+        <Button
+            android:id="@+id/chooseImageButton"
+            style="@style/ButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextAbout"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/white"
+            android:layout_width="350dp"
+            android:text="Выбрать фото"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="352dp" />
+
+        <LinearLayout
+            android:id="@+id/filters"
+            android:layout_width="340dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_black"
+            android:layout_below="@+id/chooseImageButton"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewInterests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttoncontinue"
+            style="@style/ButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/filters"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#9DD9FD"
+            android:textSize="16dp"
+            android:text="Продолжить"
+            android:textColor="#000000"
+            android:layout_width="350dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="352dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:id="@+id/count_text"
+            android:layout_height="0dp"/>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
